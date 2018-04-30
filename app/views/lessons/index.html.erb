@@ -1,0 +1,20 @@
+<div class="lessons-page">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <header>
+          <h1>Lessons</h1>
+        </header>
+
+        <div class="lessons">
+          <% @lessons.each do |lesson| %>
+            <div class="lesson">
+              <div class="title"><%= lesson.title %></div>
+              <div class="content"><%= lesson.content %></div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

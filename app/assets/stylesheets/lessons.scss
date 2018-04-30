@@ -1,0 +1,24 @@
+.lessons-page {
+  margin-top: 60px;
+
+  header { margin-bottom: 40px; }
+
+  .lessons {
+    .lesson {
+      background: white;
+      cursor: pointer;
+
+      .title {
+        font-size: 1.2rem;
+        font-weight: 300;
+        padding: 20px;
+
+        border: 1px solid #ddd;
+      }
+
+      .content {
+        display: none;
+      }
+    }
+  }
+}
