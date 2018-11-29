@@ -1,0 +1,6 @@
+// debemos enlazarnos al evento hidden.bs.modal para
+// remover el elemento del DOM, de lo contrario siempre
+// estamos agregando nuevos modales con el mismo id
+$('<%= j render "form" %>').on("hidden.bs.modal", function() {
+  $("#lesson-modal").remove();
+}).modal();
